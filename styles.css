@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Nunito+Sans:opsz@6..12&family=Poppins&display=swap');
+
+/* Ugly css for a ugly page 
+   Styles for body ☠️ */
+body {
+    max-width: 992px;
+    margin: 0 auto;
+    color: white;
+    background: linear-gradient(rgba(76, 6, 92, 1) 20%, rgba(12, 9, 113, 1) 50%, rgba(4, 50, 86, 1) 80%);
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 3rem;
+}
+
+p {
+    font-family: 'Nunito Sans', sans-serif;
+    max-width: 800px;
+}
+
+ul {
+    list-style-type: "\2B50";
+}
+
+label {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+input {
+    margin-left: 10px;
+    border: 1px gray solid;
+    background-color: transparent;
+    border-radius: 5px;
+    color: #06d6a0;
+}
+
+button {
+    margin-left: 10px;
+    background-color: #118ab2;
+    border-radius: 5px;
+    color: white;
+}
+
+select {
+    background: transparent;
+    color: #06d6a0;
+}
+
+option {
+    background: #023047;
+}
+
+li {
+    font-family: 'Inter', sans-serif;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 40px;
+}
+
+#img-container {
+    max-width: 390px;
+}
+
+#subtitle {
+    color: #ffd166;
+    font-family: 'Inter', sans-serif;
+}
+
+#exercise-7 div span {
+    overflow: auto;
+    margin-top: 0.5rem;
+    margin-left: 0.6rem;
+}
+
+#exercise-7 div {
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: 0.8rem;
+}
+
+#list-number span,
+#list-day span,
+#list-afternoon span,
+#list-night span {
+    margin-left: 0.3rem;
+    display: inline-block;
+    width: 60px;
+}
+
+#list-number button,
+#list-day button,
+#list-afternoon button,
+#list-night button {
+    margin-right: 0.5rem;
+}

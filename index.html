@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>DOM Fun</title>
+</head>
+
+<body>
+    <div id="img-container"><img src="https://kodigo.org/wp-content/uploads/2023/02/Asset-2.png" alt="Kodigo Logo"></div>
+    <h2>Exercise #1</h2>
+    <p id="subtitle">Create a function that, based on the age entered by the user, returns a message if the person is of
+        legal age or
+        not. Use the ternary operator for the condition</p>
+    <label for="age">Age verifier:</label>
+    <input type="number" id="age" placeholder="Type your age">
+    <button type="submit" onclick="ageVerifier()">Verify</button>
+    <h2>Exercise #2</h2>
+    <p id="subtitle">Create a function that determines a student's final grade, which depends on the following:
+        <br>-Exam = 20%
+        <br>-Homeworks = 40%
+        <br>-Attendance = 10%
+        <br>-Research = 30%
+    </p>
+    <div id="exercise-2">
+        <label for="nameScore">Type your full name:</label>
+        <input type="text" id="nameScore" placeholder="Full name">
+        <label for="carnetScore">Type your id:</label>
+        <input type="text" id="carnetScore" placeholder="Id">
+        <br><br>
+        <label for="examScore">Type your Exam score:</label>
+        <input type="number" id="examScore" placeholder="Exam score"><br><br>
+        <div id="homework-score">
+            <label for="hwScore-0">Type your Homework score:</label>
+            <input type="number" id="hwScore-0" placeholder="Homework score">
+            <button type="submit" onclick="hwScoreAdder()">Add another homework score</button>
+            <div id="hwContainer">
+            </div>
+        </div>
+        <br>
+        <label for="attendanceScore">Type your Attendance score:</label>
+        <input type="number" id="attendanceScore" placeholder="Attendance score"><br><br>
+        <label for="researchScore">Type your Research score:</label>
+        <input type="number" id="researchScore" placeholder="Research score"><br><br>
+        <button type="submit" onclick="finalScore()">Get final Score</button>
+    </div>
+    <h2>Exercise #3</h2>
+    <p id="subtitle">Calculate the worker increase taking into account the increase category. For this exercise you must
+        assign the
+        following variables: name, salary, category and increase. You must demonstrate the employee's details and the
+        salary increase.
+        <br>-Category A: 15%<br>-Category B: 30%<br>-Category C: 10%<br>-Category D: 20%
+    </p>
+    <div id="exercise-3">
+        <label for="name-salary">Name:</label>
+        <input type="text" id="name-salary" placeholder="Name">
+        <label for="base-salary">Salary:</label>
+        <input type="number" id="base-salary" placeholder="Base salary">
+        <label for="select-salary">Increase:</label>
+        <select name="salary-increase" id="select-salary" required>
+            <option value=""></option>
+            <option value="A">A: 15%</option>
+            <option value="B">B: 30%</option>
+            <option value="C">C: 10%</option>
+            <option value="D">D: 20%</option>
+        </select>
+        <button type="submit" onclick="salaryIncrease()">Get Increase</button>
+    </div>
+    <h2>Exercise #4</h2>
+    <p id="subtitle">Create a function that, based on 2 integer numbers entered by the user, calculate which number is
+        the largest and
+        return it.</p>
+    <div id="exercise-4">
+        <label for="compare-number-one">Number 1:</label>
+        <input type="number" id="compare-number-one" placeholder="Number 1">
+        <label for="compare-number-two">Number 2:</label>
+        <input type="number" id="compare-number-two" placeholder="Number 2"><br><br>
+        <button type="submit" onclick="compareNumber()">Compare numbers</button>
+    </div>
+    <h2>Exercise #5</h2>
+    <p id="subtitle">Create a function for a car store where it must be calculated: If the car for sale is a FORD
+        FIESTA, apply a 5%
+        discount on the purchase. If the car for sale is a FORD FOCUS, the discount will be 10% and if it is a FORD
+        ESCAPE the discount will be 20%. Show in html the selected car and the discount that will be applied based on
+        what the user selected</p>
+    <div id="exercise-5">
+        <label for="select-car">Select a car: </label>
+        <select name="car-select" id="select-car" required>
+            <option value=""></option>
+            <option value="FORD FIESTA">Ford Fiesta</option>
+            <option value="FORD FOCUS">Ford Focus</option>
+            <option value="FORD ESCAPE">Ford Escape</option>
+        </select>
+        <button type="submit" onclick="carSelection()">See discount</button>
+    </div>
+    <h2>Exercise #6</h2>
+    <p id="subtitle">Create a Function to calculate the discount on tourist trips taking into account the following:
+        <br>If the user enters the city of Palma as the origin and the Costa del Sol as the destination, the discount
+        will be 5%, if the destination is Panchimalco the discount will be 10% and if the destination is Puerto el
+        Triunfo the discount will be 15%.
+    </p>
+    <div id="exercise-6">
+        <label for="select-city-origin">Select origin:</label>
+        <select name="city-origin-selector" id="select-city-origin">
+            <option value=""></option>
+            <option value="Palma">Palma</option>
+            <option value="San Salvador">San Salvador</option>
+            <option value="Zacatecoluca">Zacatecoluca</option>
+        </select>
+        <label for="select-city-destination">Select origin:</label>
+        <select name="city-destination-selector" id="select-city-destination">
+            <option value=""></option>
+            <option value="La costa del Sol">La costa del Sol</option>
+            <option value="Panchimalco">Panchimalco</option>
+            <option value="Puerto el Triunfo">Puerto el Triunfo</option>
+        </select>
+        <button type="submit" onclick="travelDiscount()">Get discount info</button>
+    </div>
+    <h2>Exercise #7</h2>
+    <p id="subtitle">10 integer values are loaded per keyboard. We want to know:
+        <br>-The number of negative values entered.
+        <br>-The number of positive values entered.
+        <br>-The number of multiples of 15.
+        <br>-The cumulative value of entered numbers that are even.
+    </p>
+    <div id="exercise-7">
+        <label for="number-collector">Type an integer</label>
+        <input type="number" id="number-collector" placeholder="Type an integer">
+        <button type="submit" onclick="numberAdder()">Click to add</button>
+        <span id="number-counter"></span>
+        <ul id="list-number">
+        </ul>
+        <button type="submit" onclick="analyzeNumbers()">Analyze number</button>
+    </div>
+    <h2>Exercise #8</h2>
+    <p id="subtitle">Write a program that displays the multiplication table from 1 to 10 of the number entered by the
+        user</p>
+    <div id="exercise-8">
+        <label for="multiplication-factor">Factor: </label>
+        <input type="number" id="multiplication-factor" placeholder="Number">
+        <button type="submit" onclick="multiplication()">Get product</button>
+    </div>
+    <h2>Exercise #9</h2>
+    <p id="subtitle">Create a program where a temperature is entered in Celsius and the result is output in Fahrenheit.
+        Once you have
+        the temperature in Fahrenheit, it should return the following:
+        <br>-If ºF is between 14 and 32, the phrase “Low temperature” appears.
+        <br>-If ºF is between 32 and 68, the phrase “Suitable temperature” appears.
+        <br>-If ºF is between 68 and 96, the phrase “High temperature” appears.
+        <br>-If it is not among any of the above cases, the phrase "Unknown temperature" appears.
+    </p>
+    <div id="exercise-9">
+        <label for="celsius-collector"></label>
+        <input type="number" id="celsius-collector" placeholder="Celsius Temp">
+        <button type="submit" onclick="celsiusToFahrenheit()">Convert it</button>
+    </div>
+    <h2>Exercise #10</h2>
+    <p id="subtitle">The following information is available:
+        <br>-The ages of 5 students from the morning shift.
+        <br>-The ages of 6 students in the late shift.
+        <br>-The ages of 11 night shift students.
+    </p>
+    <p id="subtitle">What we want to return:
+        <br>-Obtain the average of the ages of each shift (three averages).
+        <br>-Print these averages (average of each shift).
+        <br>-Display a message on the screen indicating which of the three shifts has an
+        older average age.
+    </p>
+    <div id="exercise-10">
+        <label for="day-collector">Day shift:</label>
+        <input type="number" id="day-collector">
+        <button type="submit" onclick="ageDay()">Add age</button>
+        <ul id="list-day">
+        </ul>
+        <label for="afternoon-collector">Afternoon shift:</label>
+        <input type="number" id="afternoon-collector">
+        <button type="submit" onclick="ageAfterNoon()">Add age</button>
+        <ul id="list-afternoon">
+        </ul>
+        <label for="night-collector">Night shift:</label>
+        <input type="number" id="night-collector">
+        <button type="submit" onclick="ageNight()">Add age</button>
+        <ul id="list-night">
+        </ul>
+        <button type="submit" onclick="ageAverage()">Get averages</button>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
